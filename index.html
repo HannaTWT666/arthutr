@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Arthur Ramos vota 13</title>
+<meta name="description" content="A página do Arthur Ramos, 100% 13.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>⭐</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Figtree:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#d6001c; --red-deep:#9b0013; --red-ink:#6e000e; --white:#fffafa; --blush:#ffe3e6;
+  --bg:var(--red); --fg:var(--white);
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+:root:not([data-theme="light"]){}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--red:#c40019; --red-deep:#800010; --red-ink:#52000a; --white:#fff5f5; --blush:#f7d4d8; color-scheme:dark}
+}
+:root[data-theme="dark"]{--red:#c40019; --red-deep:#800010; --red-ink:#52000a; --white:#fff5f5; --blush:#f7d4d8}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--red);color:var(--white);font-family:Figtree,system-ui,sans-serif;font-size:18px;line-height:1.6;overflow-x:hidden}
+h1,h2,h3{font-family:Anton,Impact,"Arial Narrow",sans-serif;font-weight:400;margin:0;line-height:.95;letter-spacing:.01em}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--white);outline-offset:3px}
+
+/* estrelas */
+.sky{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.sky svg{position:absolute;fill:var(--white)}
+@keyframes tw{0%,100%{opacity:.95;transform:scale(1) rotate(0)}50%{opacity:.35;transform:scale(.7) rotate(12deg)}}
+.sky svg.t{animation:tw var(--d,4s) ease-in-out var(--l,0s) infinite}
+@media (prefers-reduced-motion:reduce){.sky svg.t{animation:none}html{scroll-behavior:auto}}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:grid;align-content:center;justify-items:center;text-align:center;padding:48px 20px 64px;background:radial-gradient(120% 90% at 50% 40%,var(--red) 0%,var(--red-deep) 100%);overflow:hidden}
+.hero>*:not(.sky){position:relative}
+.nome{font-family:Figtree;font-weight:800;font-size:clamp(15px,3.6vw,22px);letter-spacing:.18em;text-transform:none;border:2px solid var(--white);border-radius:99px;padding:6px 20px;margin-bottom:12px}
+.big{font-family:Anton;font-size:clamp(190px,56vw,520px);line-height:.82;color:var(--white);text-shadow:0 .03em 0 var(--red-ink);margin:0;display:flex;align-items:center;gap:.04em}
+.big .star{width:.17em;height:.17em;fill:var(--white);flex:none;align-self:flex-start;margin-top:.08em;filter:drop-shadow(0 .01em 0 var(--red-ink))}
+.hero h1{font-size:clamp(34px,7.2vw,76px);margin-top:10px;max-width:14em}
+.hero .sub{margin-top:18px;max-width:30em;font-size:clamp(17px,2.4vw,21px);color:var(--blush)}
+.cta{display:inline-block;margin-top:30px;background:var(--white);color:var(--red);font-weight:800;text-decoration:none;padding:15px 30px;border-radius:99px;box-shadow:0 5px 0 var(--red-ink);transition:transform .15s,box-shadow .15s}
+.cta:hover{transform:translateY(3px);box-shadow:0 2px 0 var(--red-ink)}
+
+/* seção branca */
+.paper{background:var(--white);color:var(--red-deep);position:relative}
+.wrap{max-width:1000px;margin:0 auto;padding:clamp(64px,10vw,120px) 22px}
+.manifesto{font-family:Anton;font-size:clamp(34px,6.4vw,70px);line-height:1.04;color:var(--red)}
+.manifesto span{color:var(--red-ink)}
+.quem{display:grid;gap:36px;grid-template-columns:1fr;margin-top:56px}
+@media(min-width:760px){.quem{grid-template-columns:260px 1fr;align-items:start}}
+.badge{aspect-ratio:1;border-radius:50%;background:var(--red);color:var(--white);display:grid;place-items:center;text-align:center;position:relative;box-shadow:0 8px 0 var(--red-ink);max-width:260px;width:100%;margin:0 auto}
+.badge b{font-family:Anton;font-weight:400;font-size:72px;line-height:1}
+.badge small{display:block;font-weight:800;letter-spacing:.1em;font-size:13px}
+.badge .ring{position:absolute;inset:10px;border:2px dashed var(--white);border-radius:50%;opacity:.7}
+.quem p{margin-bottom:16px;max-width:38em}
+
+
+.foto{position:relative;max-width:260px;width:100%;margin:0 auto}
+.foto img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;border-radius:20px;border:6px solid var(--red);box-shadow:10px 10px 0 var(--red-ink)}
+.foto .selo{position:absolute;right:-14px;bottom:-14px;width:84px;height:84px;border-radius:50%;background:var(--red);color:var(--white);font-family:Anton;font-size:44px;display:grid;place-items:center;border:4px solid var(--white);box-shadow:0 5px 0 var(--red-ink)}
+
+/* motivos */
+.motivos{background:var(--red);position:relative;overflow:hidden}
+.motivos .wrap{position:relative}
+.motivos h2{font-size:clamp(40px,8vw,88px);margin-bottom:44px}
+.motivo{display:grid;grid-template-columns:auto 1fr;gap:20px;padding:26px 0;border-top:2px solid rgba(255,250,250,.5)}
+.motivo svg{width:44px;height:44px;fill:var(--white);margin-top:4px}
+.motivo h3{font-size:clamp(28px,4.6vw,44px);margin-bottom:8px}
+.motivo p{color:var(--blush);max-width:34em}
+
+/* urna */
+.urna-sec{background:var(--white);color:var(--red-deep)}
+.urna-sec h2{font-size:clamp(38px,7vw,78px);color:var(--red);margin-bottom:12px}
+.urna-sec .lead{max-width:34em;margin-bottom:40px}
+.urna{display:grid;gap:18px;max-width:640px;margin:0 auto;background:var(--red);color:var(--white);border-radius:22px;padding:22px;box-shadow:0 10px 0 var(--red-ink)}
+@media(min-width:620px){.urna{grid-template-columns:1.25fr 1fr}}
+.tela{background:var(--white);color:#2a0006;border-radius:10px;padding:18px;min-height:230px;display:flex;flex-direction:column;justify-content:space-between}
+.tela .t1{font-size:13px;font-weight:800;color:var(--red-deep)}
+.digs{display:flex;gap:10px;margin:8px 0}
+.dig{width:46px;height:56px;border:2px solid #2a0006;border-radius:6px;display:grid;place-items:center;font-family:Anton;font-size:34px}
+.cand{min-height:74px;font-size:15px;line-height:1.35}
+.cand strong{font-family:Anton;font-weight:400;font-size:28px;display:block;color:var(--red);line-height:1.1}
+.tela .rod{font-size:12px;border-top:1px solid #2a000655;padding-top:8px}
+.teclado{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;align-content:start}
+.k{font:inherit;font-family:Anton;font-size:26px;padding:12px 0;border:0;border-radius:9px;background:var(--white);color:#2a0006;cursor:pointer;box-shadow:0 3px 0 var(--red-ink)}
+.k:active{transform:translateY(2px);box-shadow:0 1px 0 var(--red-ink)}
+.k.zero{grid-column:2}
+.acoes{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+.acoes .k{font-family:Figtree;font-weight:800;font-size:13px;padding:14px 4px}
+.k.corrige{background:#ff9a3d}.k.confirma{background:#27a34a;color:#fff}
+.k.branco{background:var(--white)}
+.dica{text-align:center;margin-top:22px;font-size:15px}
+
+/* rodapé */
+footer{background:var(--red-ink);color:var(--blush);text-align:center;padding:56px 22px calc(56px + env(safe-area-inset-bottom,0px));position:relative;overflow:hidden}
+footer .f13{font-family:Anton;font-size:64px;color:var(--white);line-height:1}
+footer p{max-width:32em;margin:10px auto 0;font-size:15px}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="st" viewBox="0 0 100 100"><path d="M50 3 61.8 36.4 97.3 37.3 69.2 59 79.4 93 50 73 20.6 93 30.8 59 2.7 37.3 38.2 36.4Z"/></symbol>
+</svg>
+
+<header class="hero">
+  <div class="sky" id="sky1" aria-hidden="true"></div>
+  <div class="nome">ARTHUR RAMOS</div>
+  <div class="big" aria-label="Número 13">1<span>3</span></div>
+  <h1>O Arthur já decidiu: vai de Lula.</h1>
+  <p class="sub">Tem muita gente que ainda vai pensar. O Arthur não. A mão dele já sabe o caminho da urna.</p>
+  <a class="cta" href="#urna">Treinar na urna com o Arthur</a>
+</header>
+
+<section class="paper">
+  <div class="wrap">
+    <p class="manifesto">Ser jovem é ter opinião <span>e coragem de dizer em voz alta.</span> O Arthur diz: o voto dele é 13.</p>
+    <div class="quem">
+      <div class="foto"><img src="foto-arthur.jpg" alt="Foto de Arthur Ramos" width="300" height="400"><span class="selo" aria-hidden="true">13</span></div>
+      <div>
+        <p>Arthur Ramos é adolescente, curioso e do tipo que não deixa a conversa morrer quando o assunto é o futuro do Brasil.</p>
+        <p>Ele acompanha, pergunta, discute com os amigos e depois tira a dúvida de qualquer um com um sorriso. Para ele, votar é a primeira vez em que a nossa geração assina o próprio nome na história do país.</p>
+        <p>E o nome que ele escolheu para assinar embaixo é o do Lula.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="motivos">
+  <div class="sky" id="sky2" aria-hidden="true"></div>
+  <div class="wrap">
+    <h2>Por que o Arthur vota 13</h2>
+    <div class="motivo">
+      <svg aria-hidden="true"><use href="#st"/></svg>
+      <div><h3>Porque estudar tem que levar longe</h3><p>Ele acredita que escola e universidade são a porta de entrada de qualquer sonho, e que nenhum jovem deveria ficar de fora.</p></div>
+    </div>
+    <div class="motivo">
+      <svg aria-hidden="true"><use href="#st"/></svg>
+      <div><h3>Porque o futuro é de todo mundo</h3><p>Na visão do Arthur, um país bom é aquele em que ninguém fica para trás, de qualquer cidade, família ou cor.</p></div>
+    </div>
+    <div class="motivo">
+      <svg aria-hidden="true"><use href="#st"/></svg>
+      <div><h3>Porque ele confia no 13</h3><p>É a escolha dele, feita com o coração e com a cabeça. Ele respeita quem pensa diferente, mas não troca de número.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="urna-sec" id="urna">
+  <div class="wrap">
+    <h2>Vote com o Arthur</h2>
+    <p class="lead">Digite o número do Arthur na urna e veja o que acontece. Dica: são só dois dígitos.</p>
+    <div class="urna">
+      <div class="tela" aria-live="polite">
+        <div class="t1">SEU VOTO PARA PRESIDENTE</div>
+        <div>
+          <div class="digs"><div class="dig" id="d0"></div><div class="dig" id="d1"></div></div>
+          <div class="cand" id="cand">Digite o número.</div>
+        </div>
+        <div class="rod" id="rod">Aperte CONFIRMA para finalizar este voto.</div>
+      </div>
+      <div class="teclado" id="pad"></div>
+      <div class="acoes">
+        <button class="k branco" data-a="branco">BRANCO</button>
+        <button class="k corrige" data-a="corrige">CORRIGE</button>
+        <button class="k confirma" data-a="confirma">CONFIRMA</button>
+      </div>
+    </div>
+    <p class="dica">Simulação feita só para brincar. Não vale como voto de verdade.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="sky" id="sky3" aria-hidden="true"></div>
+  <div style="position:relative">
+    <div class="f13">13</div>
+    <p>Página feita com carinho sobre a opinião pessoal do Arthur Ramos. Cada pessoa tem o direito de pensar e votar como quiser.</p>
+  </div>
+</footer>
+
+<script>
+// estrelas determinísticas
+function rng(seed){return function(){seed=(seed*16807)%2147483647;return(seed-1)/2147483646}}
+function sky(id,n,seed){
+  var el=document.getElementById(id),r=rng(seed),h='';
+  for(var i=0;i<n;i++){
+    var s=6+Math.floor(r()*r()*40),x=r()*100,y=r()*100,t=r()>.45?' class="t"':'';
+    h+='<svg'+t+' viewBox="0 0 100 100" style="left:'+x+'%;top:'+y+'%;width:'+s+'px;height:'+s+'px;--d:'+(3+r()*4).toFixed(1)+'s;--l:-'+(r()*5).toFixed(1)+'s;opacity:'+(.35+r()*.6).toFixed(2)+'"><use href="#st"/></svg>';
+  }
+  el.innerHTML=h;
+}
+sky('sky1',46,7);sky('sky2',22,19);sky('sky3',16,31);
+
+// urna
+var pad=document.getElementById('pad'),digs=['',''],done=false;
+var order=[1,2,3,4,5,6,7,8,9,0];
+order.forEach(function(n){
+  var b=document.createElement('button');b.className='k'+(n===0?' zero':'');b.textContent=n;b.setAttribute('aria-label','Tecla '+n);
+  b.onclick=function(){press(String(n))};pad.appendChild(b);
+});
+function render(){
+  document.getElementById('d0').textContent=digs[0];
+  document.getElementById('d1').textContent=digs[1];
+  var c=document.getElementById('cand'),rod=document.getElementById('rod'),num=digs.join('');
+  if(done){c.innerHTML='<strong>VOTO CONFIRMADO!</strong>O Arthur agradece. Fim.';rod.textContent='Viva a democracia!';return}
+  if(num==='13'){c.innerHTML='<strong>LULA</strong>Partido: PT';rod.textContent='Perfeito! É o número do Arthur. Aperte CONFIRMA.'}
+  else if(num.length===2){c.innerHTML='<strong>Outro número</strong>O Arthur não votaria aí. Aperte CORRIGE.';rod.textContent='Tente de novo: 1 e 3.'}
+  else{c.textContent='Digite o número.';rod.textContent='Aperte CONFIRMA para finalizar este voto.'}
+}
+function press(n){if(done)return;if(digs[0]===''){digs[0]=n}else if(digs[1]===''){digs[1]=n}render()}
+document.querySelector('.acoes').addEventListener('click',function(e){
+  var a=e.target.dataset.a;if(!a)return;
+  if(a==='corrige'){digs=['',''];done=false}
+  else if(a==='branco'){digs=['',''];done=false;document.getElementById('cand').innerHTML='<strong>BRANCO</strong>O Arthur prefere o 13, tente de novo.'; return}
+  else if(a==='confirma'&&digs.join('')==='13'){done=true;burst()}
+  render();
+});
+function burst(){
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  var s=document.getElementById('sky3');
+  for(var i=0;i<14;i++){}
+}
+render();
+</script>
+</body>
+</html>
