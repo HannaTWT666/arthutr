@@ -1,0 +1,18 @@
+<!doctype html><html lang="pt-BR"><head><title>O voto do Arthur</title><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body>
+<nav><a class="logo" href="index.html">Arthur <b>Ramos</b></a><ul><li><a class="l" href="index.html">Início</a></li><li><a class="l" href="sobre.html">Quem é</a></li><li><a class="l" href="trajetoria.html">Trajetória</a></li><li><a class="l" href="galeria.html">Galeria</a></li><li><a class="l" href="quiz.html">Quiz</a></li><li><a class="l on" href="voto.html">O voto</a></li><li><a class="l" href="mural.html">Mural</a></li></ul></nav>
+<div class="vs"><div class="y"><h2>Por que 13</h2><p>Para o Arthur, é o número que combina com o Brasil que ele quer ver. Escreva aqui os motivos dele, com as palavras dele.</p></div>
+<div class="n"><h2>Por que não o 22</h2><p>É o número que ele nunca aperta. Escreva aqui o que o Arthur pensa, sempre como opinião dele.</p></div></div>
+<section><div class="wrap"><h2>Teste a urna do Arthur</h2><p>Digite um número e veja a reação dele.</p>
+<div class="urna"><div class="tela" aria-live="polite"><small>Seu voto para</small><span class="d" id="n">__</span><small id="msg">Digite 2 números</small></div>
+<div class="keys" id="k"></div></div></div></section>
+<footer>Feito com carinho para o <b>Arthur</b>. Voto é pessoal, opinião também.</footer>
+<script>
+let v="";const n=document.getElementById("n"),m=document.getElementById("msg"),k=document.getElementById("k");
+function show(){n.textContent=(v+"__").slice(0,2);
+if(v.length<2){m.textContent="Digite 2 números";return}
+m.textContent=v==="13"?"Arthur aprova! Esse é o número dele.":v==="22"?"Arthur não aceita. Próximo.":"Hmm, esse não é o número do Arthur."}
+[1,2,3,4,5,6,7,8,9].forEach(d=>add(d,String(d)));
+add("Corrige","c",()=>{v="";show()});add(0,"0");add("Confirma","ok",()=>{m.textContent=v==="13"?"Voto confirmado: 13!":"Arthur pede: tente o 13."});
+function add(t,c,f){const b=document.createElement("button");b.textContent=t;
+if(isNaN(t))b.className=c;b.onclick=f||(()=>{if(v.length<2){v+=c;show()}});k.appendChild(b)}
+</script></body></html>
